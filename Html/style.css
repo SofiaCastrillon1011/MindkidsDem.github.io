@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(-45deg, #cb8799, #d138ff, #5dc6db, #c277ca);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-size: 200% 200%;
+    animation: changeColor 8s infinite alternate;    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+section.sobre_nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+@keyframes changeColor {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+.contenido {
+    flex-basis: 60%;
+}
+
+.imagen {
+    flex-basis: 35%;
+    text-align: center;
+}
+
+.imagen img {
+    max-width: 100%;
+    max-height: 600vh; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 50vh;
+}
+
+.primer_titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre_nosotros{
+    margin: auto;
+    font-size: 20px;
+}
+
+section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#trastornos_info .trastornos_alimenticios .trastorno {
+    flex-basis: calc(33.33% - 10px); 
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s; 
+}
+
+#trastornos_info .trastornos_alimenticios .trastorno:hover {
+    transform: scale(1.05); 
+}
+
+#trastornos_info button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+#trastornos_info button:hover {
+    background-color: rgb(92, 112, 224); 
+}
+
+.boton_transtornos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+section#recursos h2 {
+    text-align: center;
+}
+
+section#recursos ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
+section#recursos ul li {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+}
+
+section#recursos ul li iframe {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background: linear-gradient(-45deg, #e5cfd5, rgba(183, 92, 219, 0.745), #acd9e2, #a88eab); 
+    background-size: 200% 200%;
+    animation: changeColor 8s infinite alternate;
+    color: black; 
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_padre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 10px;
+}
+
+.footer_padre a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.footer_padre img {
+    width: 25px; 
+}
+
+.footer_padre label {
+    display: block; 
+    margin-top: 5px; 
+}
+
